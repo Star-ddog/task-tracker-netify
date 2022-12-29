@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "id": 2,
+      "text": "Meeting at school",
+      "day": "Feb 6th at 1:30pm",
+      "reminder": true
+    },
+    {
+      "text": "christmas day",
+      "day": "25th of dec at 00:00",
+      "reminder": true,
+      "id": 4
+    },
+    {
+      "text": "chronicles of stardog",
+      "day": "23rd of febn at 5:30am",
+      "reminder": true,
+      "id": 5
+    },
+    {
+      "text": "village travel",
+      "day": "1st of jan",
+      "reminder": true,
+      "id": 6
+    }
+  ]
+}
