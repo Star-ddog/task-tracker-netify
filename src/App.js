@@ -24,7 +24,7 @@ const App = () => {
 
     // fetch tasks
     const fetchTasks = async () => {
-      const res = await fetch('http://localhost:5000/tasks')
+      const res = await fetch('https://rest-api-ebmc.onrender.com/tasks')
       const data =await res.json() 
 
       return data
@@ -32,14 +32,14 @@ const App = () => {
 
      // fetch tasks
      const fetchTask = async (id) => {
-      const res = await fetch(`http://localhost:5000/tasks/${id}`)
+      const res = await fetch(`https://rest-api-ebmc.onrender.com/tasks/${id}`)
       const data = await res.json()
 
       return data
     }
   // Add task
     const addTask = async (task) =>{
-      const res = await fetch ('http://localhost:5000/tasks', {
+      const res = await fetch ('https://rest-api-ebmc.onrender.com/tasks', {
         method: 'POST',
         headers: {
           'content-type': 'application/json',
@@ -59,7 +59,7 @@ const App = () => {
 
   // delete task.........
     const deleteTask = async (id) => {
-      await fetch(`http://localhost:5000/tasks/${id}`,{
+      await fetch(`https://rest-api-ebmc.onrender.com/tasks/${id}`,{
         method: 'DELETE',
       })
 
@@ -74,7 +74,7 @@ const App = () => {
       const updTask = {...taskToToggle, reminder: 
       !taskToToggle.reminder}
 
-      const res = await fetch(`http://localhost:5000/tasks/${id}`, {
+      const res = await fetch(`https://rest-api-ebmc.onrender.com/tasks/${id}`, {
         method:`PUT`,
         headers: {
           'content-type': 'application/json'
